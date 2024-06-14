@@ -1,5 +1,5 @@
 ﻿#ParentDIV { background-repeat: no-repeat; overflow: visible; position: relative; }
-#ParentDIV table { font-size: 100%; }
+#ParentDIV table { font-size: 100%; border-collapse: collapse; }
 #ParentDIV .be-component { position: absolute; font-weight: normal; text-align: left; }
 #ParentDIV .be-image img { width: 100%; height: auto; display: block; }
 #ParentDIV .be-image-profile img { height: 100%; }
@@ -31,3 +31,5 @@
 .whiterow {background:#ffffff; width:100%;}
 .tagtbl { border-collapse: collapse;}
 .tbl {border:0; border-spacing:0;}
+.tblbdg { text-align:center; page-break-after:always;}
+.pgBr {page-break-after:always;}
