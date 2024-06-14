@@ -34,7 +34,7 @@
 .tblbdg { text-align:center; page-break-after:always;}
 .pgBr {page-break-after:always;}
 
-/* New CSS for handling page breaks more effectively */
+/* Additional styles to handle page breaks effectively */
 @media print {
   table, tr, td {
       page-break-inside: avoid;
@@ -44,6 +44,12 @@
       page-break-after: auto;
   }
   td {
+      page-break-before: auto;
+      page-break-after: auto;
+  }
+  /* Ensure that content starts at the top of the next page */
+  .avoid-page-break {
+      page-break-inside: avoid;
       page-break-before: auto;
       page-break-after: auto;
   }
