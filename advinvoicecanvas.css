@@ -33,3 +33,18 @@
 .tbl {border:0; border-spacing:0;}
 .tblbdg { text-align:center; page-break-after:always;}
 .pgBr {page-break-after:always;}
+
+/* New CSS for handling page breaks more effectively */
+@media print {
+  table, tr, td {
+      page-break-inside: avoid;
+  }
+  tr {
+      page-break-before: auto;
+      page-break-after: auto;
+  }
+  td {
+      page-break-before: auto;
+      page-break-after: auto;
+  }
+}
