@@ -1,6 +1,6 @@
 ﻿#ParentDIV { background-repeat: no-repeat; overflow: visible; position: relative; }
 #ParentDIV table { font-size: 100%; border-collapse: collapse; }
-#ParentDIV .be-component { position: relative; font-weight: normal; text-align: left; }
+#ParentDIV .be-component { position: absolute; font-weight: normal; text-align: left; }
 #ParentDIV .be-image img { width: 100%; height: auto; display: block; }
 #ParentDIV .be-image-profile img { height: 100%; }
 #ParentDIV .be-text span { word-wrap: break-word; }
@@ -47,10 +47,19 @@
       page-break-before: auto;
       page-break-after: auto;
   }
+  tbody {
+      page-break-inside: auto;
+      page-break-before: auto;
+      page-break-after: auto;
+  }
   /* Ensure that content starts at the top of the next page */
   .avoid-page-break {
       page-break-inside: avoid;
       page-break-before: auto;
       page-break-after: auto;
+  }
+  tr {
+      page-break-before: always;
+      break-inside: avoid;
   }
 }
