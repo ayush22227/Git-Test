@@ -1,5 +1,4 @@
-﻿#ParentDIV { background-repeat: no-repeat; overflow: visible; position: relative; }
-#ParentDIV table { font-size: 100%; border-collapse: collapse; }
+﻿#ParentDIV table { font-size: 100%; border-collapse: collapse; }
 #ParentDIV .be-component { position: absolute; font-weight: normal; text-align: left; }
 #ParentDIV .be-image img { width: 100%; height: auto; display: block; }
 #ParentDIV .be-image-profile img { height: 100%; }
@@ -33,33 +32,3 @@
 .tbl {border:0; border-spacing:0;}
 .tblbdg { text-align:center; page-break-after:always;}
 .pgBr {page-break-after:always;}
-
-/* Additional styles to handle page breaks effectively */
-@media print {
-  table, tr, td {
-      page-break-inside: avoid;
-  }
-  tr {
-      page-break-before: auto;
-      page-break-after: auto;
-  }
-  td {
-      page-break-before: auto;
-      page-break-after: auto;
-  }
-  tbody {
-      page-break-inside: auto;
-      page-break-before: auto;
-      page-break-after: auto;
-  }
-  /* Ensure that content starts at the top of the next page */
-  .avoid-page-break {
-      page-break-inside: avoid;
-      page-break-before: auto;
-      page-break-after: auto;
-  }
-  tr {
-      page-break-before: always;
-      break-inside: avoid;
-  }
-}
