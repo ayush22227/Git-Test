@@ -1,4 +1,5 @@
-﻿#ParentDIV table { font-size: 100%; border-collapse: collapse; }
+﻿#ParentDIV { background-repeat: no-repeat; overflow: visible; position: relative; }
+#ParentDIV table { font-size: 100%; border-collapse: collapse; }
 #ParentDIV .be-component { position: absolute; font-weight: normal; text-align: left; }
 #ParentDIV .be-image img { width: 100%; height: auto; display: block; }
 #ParentDIV .be-image-profile img { height: 100%; }
@@ -22,13 +23,3 @@
 #ParentDIV .rotate90 .be-helper { -ro-transform: rotate(90deg); -webkit-transform: rotate(90deg); }
 #ParentDIV .rotate180 .be-helper { -ro-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
 #ParentDIV .rotate270 .be-helper { -ro-transform: rotate(270deg); -webkit-transform: rotate(270deg); }
-.align-r { text-align:right;}
-.align-l { text-align:left;}
-.hdrow {background:#DFDFDF; width:100%; font-weight:bold; }
-.whitehdrow {background:#ffffff; width:100%; font-weight:bold; }
-.row {background:#DFDFDF; width:100%;}
-.whiterow {background:#ffffff; width:100%;}
-.tagtbl { border-collapse: collapse;}
-.tbl {border:0; border-spacing:0;}
-.tblbdg { text-align:center; page-break-after:always;}
-.pgBr {page-break-after:always;}
