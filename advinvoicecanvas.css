@@ -1,4 +1,8 @@
-﻿#ParentDIV .be-text span { word-wrap: break-word; }
+﻿#ParentDIV { background-repeat: no-repeat; overflow: visible; position: relative; }
+#ParentDIV .be-component { position: absolute; font-weight: normal; text-align: left; }
+#ParentDIV .be-image img { width: 100%; height: auto; display: block; }
+#ParentDIV .be-image-profile img { height: 100%; }
+#ParentDIV .be-text span { word-wrap: break-word; }
 #ParentDIV .be-textarea span { word-wrap: break-word; line-height: 1.2; }
 #ParentDIV .be-bold .be-text-content { font-weight: bold; }
 #ParentDIV .be-italic .be-text-content { font-style: italic; }
@@ -13,7 +17,7 @@
 #ParentDIV .be-lowercase { text-transform: lowercase; }
 #ParentDIV .be-titlecase { text-transform: capitalize; }
 #ParentDIV .be-titlecase td {text-transform: capitalize;}
-#ParentDIV .be-helper { width: 99%; height: 100%; position: relative; overflow: visible; }
+#ParentDIV .be-helper { width: 100%; height: 100%; position: relative; overflow: visible; }
 #ParentDIV .be-image .be-helper { overflow: visible; }
 #ParentDIV .rotate90 .be-helper { -ro-transform: rotate(90deg); -webkit-transform: rotate(90deg); }
 #ParentDIV .rotate180 .be-helper { -ro-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
