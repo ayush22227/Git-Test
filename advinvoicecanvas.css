@@ -1,23 +1,6 @@
 ﻿#ParentDIV { background-repeat: no-repeat; overflow: visible; position: relative; }
-#ParentDIV table { 
-  font-size: 100%; 
-  border-collapse: collapse; 
-  width: 100%; 
-  page-break-inside: auto; /* Ensure table handles page breaks inside */
-}
-
-#ParentDIV table tr { 
-  page-break-inside: avoid; /* Prevent table rows from breaking across pages */
-  page-break-after: auto; /* Handle page breaks after the row */
-}
-
-#ParentDIV table td, 
-#ParentDIV table th { 
-  page-break-inside: avoid; /* Prevent table cells from breaking across pages */
-  page-break-after: auto; /* Handle page breaks after the cell */
-  word-wrap: break-word; /* Ensure long words break correctly within cells */
-}
-#ParentDIV .be-component { position: absolute; font-weight: normal; text-align: left; }
+#ParentDIV table { font-size: 100%; border-collapse: collapse; }
+#ParentDIV .be-component:not(table) { position: absolute; font-weight: normal; text-align: left; }
 #ParentDIV .be-image img { width: 100%; height: auto; display: block; }
 #ParentDIV .be-image-profile img { height: 100%; }
 #ParentDIV .be-text span { word-wrap: break-word; }
