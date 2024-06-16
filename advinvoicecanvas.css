@@ -29,7 +29,7 @@
 }
 
 #ParentDIV .be-component-table tr {
-  page-break-inside: avoid; /* Prevent breaking inside rows */
+  page-break-inside: avoid; 
   page-break-after: auto;
 }
 
