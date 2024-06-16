@@ -1,7 +1,7 @@
 ﻿#ParentDIV { background-repeat: no-repeat; overflow: visible; position: relative; }
-#ParentDIV table { font-size: 100%; }
+#ParentDIV table { font-size: 100%; page-break-inside: auto; }
 #ParentDIV .be-component { position: absolute; font-weight: normal; text-align: left; }
-#ParentDIV .be-component-table { position: relative; font-weight: normal; text-align: left; overflow: visible; }
+#ParentDIV .be-component-table { position: relative; font-weight: normal; text-align: left; overflow: visible; page-break-inside: auto; }
 #ParentDIV .be-image img { width: 100%; height: auto; display: block; }
 #ParentDIV .be-image-profile img { height: 100%; }
 #ParentDIV .be-text span { word-wrap: break-word; }
