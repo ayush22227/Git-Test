@@ -29,13 +29,13 @@
 }
 
 #ParentDIV .be-component-table tr {
-  page-break-inside: avoid; 
+  page-break-inside: auto; 
   page-break-after: auto;
 }
 
 #ParentDIV .be-component-table td,
 #ParentDIV .be-component-table th {
-  page-break-inside: avoid;
+  page-break-inside: auto;
   page-break-after: auto;
 }
 #ParentDIV .be-image img { width: 100%; height: auto; display: block; }
