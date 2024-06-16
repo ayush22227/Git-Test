@@ -20,7 +20,7 @@
   page-break-after: auto;
 }
 #ParentDIV .be-component-table thead {
-  display: table-header-group; /* Ensure header is repeated on each page */
+  display: table-header-group; 
 }
 
 #ParentDIV .be-component-table tbody {
