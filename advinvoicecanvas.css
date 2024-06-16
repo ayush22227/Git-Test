@@ -1,4 +1,9 @@
-﻿#ParentDIV .be-left-aligned { text-align: left; }
+﻿#ParentDIV .be-text span { word-wrap: break-word; }
+#ParentDIV .be-textarea span { word-wrap: break-word; line-height: 1.2; }
+#ParentDIV .be-bold .be-text-content { font-weight: bold; }
+#ParentDIV .be-italic .be-text-content { font-style: italic; }
+#ParentDIV .be-underlined .be-text-content { text-decoration: underline; }
+#ParentDIV .be-left-aligned { text-align: left; }
 #ParentDIV .be-center-aligned { text-align: center; }
 #ParentDIV .be-right-aligned { text-align: right; }
 #ParentDIV .be-dynamic-resizing { white-space: nowrap; }
