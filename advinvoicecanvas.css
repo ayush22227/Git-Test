@@ -17,7 +17,7 @@
 #ParentDIV .be-lowercase { text-transform: lowercase; }
 #ParentDIV .be-titlecase { text-transform: capitalize; }
 #ParentDIV .be-titlecase td {text-transform: capitalize;}
-#ParentDIV .be-helper { width: 99%; height: 100%; position: relative; overflow: visible; }
+#ParentDIV .be-helper { width: 98%; height: 100%; position: relative; overflow: visible; }
 #ParentDIV .be-image .be-helper { overflow: visible; }
 #ParentDIV .rotate90 .be-helper { -ro-transform: rotate(90deg); -webkit-transform: rotate(90deg); }
 #ParentDIV .rotate180 .be-helper { -ro-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
