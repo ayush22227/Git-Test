@@ -1,18 +1,31 @@
 $(function () {
-    function adjustContent() {
-        let components = document.querySelectorAll('#ParentDIV .be-component');
-        
-        // Add a debug message into each component
+    function applyStylesForPage2() {
+        let components = document.querySelectorAll('#ParentDIV .be-component-table');
+        let pageHeight = window.innerHeight;
+        let parentRect = document.getElementById('ParentDIV').getBoundingClientRect();
+
         components.forEach((component, index) => {
-            let debugMessage = document.createElement('div');
-            debugMessage.textContent = `Component ${index + 1} adjusted by JavaScript`;
-            component.appendChild(debugMessage);
+            let rect = component.getBoundingClientRect();
+            let topOffset = rect.top - parentRect.top;
+
+            // Calculate the page number
+            let pageIndex = Math.floor((topOffset + window.scrollY) / pageHeight);
+
+            // Apply styles if the component is on page 2 or beyond
+            if (pageIndex >= 1) {  // Page index is 0-based; Page 2 is index 1
+                component.style.position = 'absolute';
+                component.style.fontWeight = 'normal';
+                component.style.textAlign = 'left';
+
+                // Add a specific class if needed
+                component.classList.add('page-2-and-beyond');
+            }
         });
     }
 
-    // Initial adjustment
-    adjustContent();
+    // Initial application
+    applyStylesForPage2();
 
-    // Adjust on window resize (if needed)
-    $(window).on('resize', adjustContent);
+    // Reapply styles on window resize if needed
+    $(window).on('resize', applyStylesForPage2);
 });
