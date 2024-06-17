@@ -13,7 +13,7 @@ $(function () {
 
             // Apply styles if the component is on page 2 or beyond
             if (pageIndex >= 1) {  // Page index is 0-based; Page 2 is index 1
-                component.style.position = 'absolute';
+                component.style.position = 'relative';
                 component.style.fontWeight = 'normal';
                 component.style.textAlign = 'left';
 
