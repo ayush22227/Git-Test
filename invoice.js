@@ -1,9 +1,10 @@
 $(function () {
     function addBackgroundColor() {
-        let components = document.querySelectorAll('#ParentDIV .be-component');
-        
-        components.forEach((component) => {
-            component.style.backgroundColor = 'skyblue';
+        let parentDiv = document.getElementById('ParentDIV');
+        let allElements = parentDiv.querySelectorAll('*'); // Select all elements within #ParentDIV
+
+        allElements.forEach((element) => {
+            element.style.backgroundColor = 'skyblue';
         });
     }
 
