@@ -1,16 +1,8 @@
 $(function () {
-    function addBackgroundColor() {
-        let parentDiv = document.getElementById('ParentDIV');
-        let allElements = parentDiv.querySelectorAll('*'); // Select all elements within #ParentDIV
-
-        allElements.forEach((element) => {
-            element.style.backgroundColor = 'skyblue';
+    if ($('.be-component-table').length) {
+        $('.be-component-table').each(function () {
+            var $this = $(this);
+            $this.css('color', 'blue');
         });
     }
-
-    // Apply background color initially
-    addBackgroundColor();
-
-    // Reapply background color on window resize if needed
-    $(window).on('resize', addBackgroundColor);
 });
