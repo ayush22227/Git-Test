@@ -2,9 +2,11 @@ $(function () {
     function adjustContent() {
         let components = document.querySelectorAll('#ParentDIV .be-component');
         
-        // Reset the initial top position for each component
+        // Add a debug message into each component
         components.forEach((component, index) => {
-            component.style.top = '0';  // Set top position to 0
+            let debugMessage = document.createElement('div');
+            debugMessage.textContent = `Component ${index + 1} adjusted by JavaScript`;
+            component.appendChild(debugMessage);
         });
     }
 
